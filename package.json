@@ -63,7 +63,7 @@
   },
   "optionalDependencies": {
     "bufferutil": "~1.2.1",
-    "utf-8-validate": "~1.2.1"
+    "utf-8-validate": "https://github.com/websockets/utf-8-validate.git"
   },
   "devDependencies": {
     "benchmark": "1.0.0",
