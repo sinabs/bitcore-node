@@ -17,7 +17,7 @@ To start reindexing add `reindex=1` during the **first startup only**.
 
 ### Configuration Options
 
-- The `bitcoin.conf` file in will need to be updated to include additional indexes *(see below)*.
+- The `bitcoinfile.conf` file in will need to be updated to include additional indexes *(see below)*.
 - The `datadir` option is now a part of `bitcoind` spawn configuration, and there is a new option to connect to multiple bitcoind processes (Please see [Bitcoin Service Docs](services/bitcoind.md) for more details). The services `db` and `address` are now a part of the `bitcoind` service. Here is how to update `bitcore-node.json` configuration options:
 
 **Before**:
@@ -55,7 +55,7 @@ To start reindexing add `reindex=1` during the **first startup only**.
 }
 ```
 
-It will also be necessary to update `bitcoin.conf` settings, to include these fields:
+It will also be necessary to update `bitcoinfile.conf` settings, to include these fields:
 ```
 server=1
 whitelist=127.0.0.1
